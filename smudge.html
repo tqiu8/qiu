@@ -1,223 +1,54 @@
+﻿<!DOCTYPE html>
 
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
-    <!-- Basic Page Needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>Tammy Qiu</title>
-    <meta name="description" content=".">
-    <meta name="author" content="">
-    
-    <!-- Mobile Specific Metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-    <!-- CSS Files
-    * cssreset-min.css          - CSS reset
-    * typegrid.css              - Responsive grid system
-    * style.css                 - Main CSS file
-    
-    Original LESS Stylesheet
-    <link rel="stylesheet/less" type="text/css" href="css/style.less" />
-    ================================================== -->
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.8.0/build/cssreset/cssreset-min.css">
-    <link rel="stylesheet" type="text/css" href="css/typegrid.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
-
-        
-    <!--[if lt IE 8]>
-        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
-    <![endif]-->
-
-    <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
-
-    <!-- Favicons
-    ================================================== -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/new.css">
+    <link href="https://fonts.googleapis.com/css?family=Changa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <script src="js/sketch.js"></script>
+    <title></title>
 
 </head>
-
+<style>
+    body {
+        overflow-y: auto;
+        height: 100vh;
+    }
+</style>
 <body>
+    <div class="topnav noselect">
+        <a href="/index.html">TAMMY QIU</a>
+        <a href="about.html">About</a>
+
+        <div class="left">
+            <a href="javascript:void(0);" onclick="Clear();">clear</a>
+            <a href="javascript:void(0);" onclick="Save();">leave message</a>
+        </div>
+    </div>
+
+    <div class="column noselect">
+        <em><h1 class="title">smudge remix</h1></em>
+
+        <img src="images/smudge/smudge-gif.gif" />
 
 
-    <!-- Header - Half Logo
-    ================================================== -->
-    <section id="header">
-
-        <!-- * * * * * * * * * * * * * * * * * * * * * * *
-
-            Top Bar & Menu (#nav)
-
-        * * * * * * * * * * * * * * * * * * * * * * * * -->
-        <div class="topbar">
-            <div class="container">
-                    
-                <!--
-                    A custom jQuery plugin called typeMenu handles the menu
-                    Add .hide-on-mobile to <li> elements to hide a specific item on mobile viewports
-                -->
-                <ul id="nav" class="full">
-                    <li>
-                        <a href="about.html">
-                            <span class="count hide-on-mobile">01.</span>
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a href="fun.html">
-                            <span class="count hide-on-mobile">02.</span>
-                            Fun
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact.html">
-                            <span class="count hide-on-mobile">03.</span>
-                            Contact
-                        </a>
-                        
-                    </li>
-
-                    <li>
-                        <a href="shop.html">
-                            <span class="count hide-on-mobile">04.</span>Shop
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="archive-blog.html">
-                            <span class="count hide-on-mobile">05.</span>
-                            Blog
-                        </a>
-                    </li>
-                    
-                </ul><!-- // #nav -->
-
-            </div><!-- // .container -->
-        </div><!-- // .topbar -->
-
-        <div class="logo-wrap">
-            <div class="container">
-                <div class="desktop-3 columns">
-                    <h1><a href="index.html" title="Home"><img class ='logo' src="images/logo.png" alt="" /></a></h1>
-                </div><!-- // .desktop-6 -->
-
-                <div class="desktop-6 columns">
-                    <p class="site-desc">
-                        Tammy Qiu<br />
-                        <span class="font-color-primary">portfolio | blog</span>
-                    </p><!-- // .site-desc -->
-                </div><!-- // .desktop-6 -->
-
-                <div class="clear"></div>
-            </div><!-- // .container -->
-        </div><!-- // .logo-wrap -->
-    </section><!-- // #header -->
-
-    <!-- Work - Single Page (Full Width)
-    ================================================== -->
-    <section id="works" class="page single">
-        <div class="container">
-
-            <div class="sidebar full-width">
-                <div class="desktop-6 tablet-12 columns">           
-                    <!-- 
-                        .sidebar here is to used to apply the same CSS styles (padding, margin, font-size, and etc) applied to "left-sidebar" and "right-sidebar" templates
-                    -->
-                    
-                        <div class="box-info">
-                            <h3 class="border-top">Smudge Remix</h3>
-                            <p class="project-desc">2018</p>
-
-                            <p>this is what happens when you combine <a href="https://twitter.com/dog_feelings">@dog_feelings</a> tweets, <a href="http://paperjs.org/">paper.js</a>, and my infinite love for dogs (and my dog, smudge, in particular).
-                            </p>
-                            <p>
-                            <a class="button small" href="https://tqiu8.github.io/smudge-remix/">if you ever need a pick-me-up</a>
-                            </p>
-
-                        </div><!-- // .box-info -->
-                </div><!-- // .desktop-6 -->
-
-                <div class="clear show-under-tablet"></div>
-
-            
-
-                <div class="clear"></div>
-            </div><!-- // .sidebar -->
-
-            <div class="clear"></div>
-            
-            <div class="desktop-12 columns">
-
-                <img src="images/smudge/smudge-gif.gif" alt="" />
-
-            </div><!-- // .desktop-12 -->
-
-            <div class="clear"></div>
-
-        </div><!-- // .container -->
-    </section><!-- // section -->
+    </div>
 
 
 
 
-    <!-- Footer
-    ================================================== -->
-    <section id="footer">
-        <div class="container">
-            <div class="desktop-3 columns">
-                <p>Copyright &copy; <a href="http://www.typebig.com" class="italic">Typebig</a></p>
-            </div><!-- // .desktop-3 -->
 
-            <div class="desktop-9 columns">
-                <ul id="social">
-                    <li><a href="https://www.facebook.com/tammy.qiu.9" class="hoverMe">Facebook</a></li>
-                    <li><a href="https://twitter.com/tammyqiu" class="hoverMe">Twitter</a></li>
-                    <li><a href="https://www.instagram.com/qiu.8/" class="hoverMe">Instagram</a></li>
-                </ul><!-- // #social -->
-            </div><!-- // .desktop-9 -->
+    <div class="bottomnav noselect">
+        <a href="https://twitter.com/tammyqiu">Twitter</a>
+        <a href="https://www.instagram.com/qiu.8">Instagram</a>
+        <a href="mailto:21tqiu@gmail.com">E-mail</a>
 
-            <div class="clear"></div>
-        </div><!-- // .container -->
-    </section><!-- // section#footer -->
+        <div class="left">
+            <a href="">feel free to leave a message on the page by drawing on the screen</a>
+        </div>
+    </div>
 
-
-    <!-- JS
-    ================================================== -->
-    <!-- 
-        Flexslider 2.1 has known issues of manualControls setting with jQuery 1.9~
-        Use jQuery 1.8 until Flexslider 2.2 stable version is released
-    -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-    <script src="js/jQuery.BlackAndWhite.min.js"></script>
-    <script src="js/modernizr.js"></script>
-    <script src="js/less-1.4.0.min.js"></script>
-    <script src="js/jquery.typeMenu.js"></script>
-    <script src="js/jquery.typeSticky.js"></script>
-
-
-    
-
-    
-
-
-    
-
-
-    <script src="js/jquery.custom.js"></script>
-
-
-<!-- End Document
-================================================== -->
 </body>
 </html>

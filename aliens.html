@@ -1,259 +1,56 @@
+﻿<!DOCTYPE html>
 
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
-    <!-- Basic Page Needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>Tammy Qiu</title>
-    <meta name="description" content=".">
-    <meta name="author" content="">
-    
-    <!-- Mobile Specific Metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-    <!-- CSS Files
-    * cssreset-min.css          - CSS reset
-    * typegrid.css              - Responsive grid system
-    * style.css                 - Main CSS file
-    
-    Original LESS Stylesheet
-    <link rel="stylesheet/less" type="text/css" href="css/style.less" />
-    ================================================== -->
-    <link rel="stylesheet" type="text/css" href="https://yui.yahooapis.com/3.8.0/build/cssreset/cssreset-min.css">
-    <link rel="stylesheet" type="text/css" href="css/typegrid.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
-
-        
-    <!--[if lt IE 8]>
-        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
-    <![endif]-->
-
-    <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
-    <!-- Favicons
-    ================================================== -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/new.css">
+    <link href="https://fonts.googleapis.com/css?family=Changa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <script src="js/sketch.js"></script>
+    <title></title>
 
 </head>
-
+<style>
+    body {
+        overflow-y: auto;
+    }
+</style>
 <body>
+    <div class="topnav noselect">
+        <a href="/index.html">TAMMY QIU</a>
+        <a href="about.html">About</a>
 
+        <div class="left">
+            <a href="javascript:void(0);" onclick="Clear();">clear</a>
+            <a href="javascript:void(0);" onclick="Save();">leave message</a>
+        </div>
+    </div>
 
-    <!-- Header - Half Logo
-    ================================================== -->
-    <section id="header">
+    <div class="column noselect">
+        <em><h1 class="title">where are they?</h1></em>
 
-        <!-- * * * * * * * * * * * * * * * * * * * * * * *
+        <img src="images/aliens/survey.gif" />
 
-            Top Bar & Menu (#nav)
+        <img src="images/aliens/answers.gif" />
 
-        * * * * * * * * * * * * * * * * * * * * * * * * -->
-        <div class="topbar">
-            <div class="container">
-                    
-                <!--
-                    A custom jQuery plugin called typeMenu handles the menu
-                    Add .hide-on-mobile to <li> elements to hide a specific item on mobile viewports
-                -->
-                <ul id="nav" class="full">
-                    <li>
-                        <a href="about.html">
-                            <span class="count hide-on-mobile">01.</span>
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a href="fun.html">
-                            <span class="count hide-on-mobile">02.</span>
-                            Fun
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact.html">
-                            <span class="count hide-on-mobile">03.</span>
-                            Contact
-                        </a>
-                        
-                    </li>
+        <img src="images/aliens/ball.gif" />
 
-                    <li>
-                        <a href="shop.html">
-                            <span class="count hide-on-mobile">04.</span>Shop
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="archive-blog.html">
-                            <span class="count hide-on-mobile">05.</span>
-                            Blog
-                        </a>
-                    </li>
-                    
-                </ul><!-- // #nav -->
-
-            </div><!-- // .container -->
-        </div><!-- // .topbar -->
-
-        <div class="logo-wrap">
-            <div class="container">
-                <div class="desktop-3 columns">
-                    <h1><a href="index.html" title="Home"><img class ='logo' src="images/logo.png" alt="" /></a></h1>
-                </div><!-- // .desktop-6 -->
-
-                <div class="desktop-6 columns">
-                    <p class="site-desc">
-                        Tammy Qiu<br />
-                        <span class="font-color-primary">portfolio | blog</span>
-                    </p><!-- // .site-desc -->
-                </div><!-- // .desktop-6 -->
-
-                <div class="clear"></div>
-            </div><!-- // .container -->
-        </div><!-- // .logo-wrap -->
-    </section><!-- // #header -->
-
-    <!-- Work - Single Page (Full Width)
-    ================================================== -->
-    <section id="works" class="page single">
-        <div class="container">
-
-            <div class="sidebar full-width">
-                <div class="desktop-6 tablet-12 columns">           
-                    <!-- 
-                        .sidebar here is to used to apply the same CSS styles (padding, margin, font-size, and etc) applied to "left-sidebar" and "right-sidebar" templates
-                    -->
-                    
-                        <div class="box-info">
-                            <h3 class="border-top">Where are they?</h3>
-                            <p class="project-desc">2018</p>
-
-                            <p>a 3-part series revolving around the topic of the fermi paradox, loneliness, and connection. 
-                            </p>
-
-                        </div><!-- // .box-info -->
-                </div><!-- // .desktop-6 -->
-
-                <div class="clear show-under-tablet"></div>
-
-            
-
-                <div class="clear"></div>
-            </div><!-- // .sidebar -->
-
-            <div class="clear"></div>
-            
-            <div class="desktop-12 columns">
-                <h1>booklet</h1>
-                <div class="desktop-5 tablet-12 columns"> 
-                    <img src="images/aliens/page_1.jpg" alt="" />
-                    <img src="images/aliens/page_3.jpg" alt="" />
-                    <img src="images/aliens/page_5.jpg" alt="" />
-                    <img src="images/aliens/page_7.jpg" alt="" />
-                </div>
-                <div class="desktop-5 tablet-12 columns"> 
-                    <img src="images/aliens/page_2.jpg" alt="" />
-                    <img src="images/aliens/page_4.jpg" alt="" />
-                    <img src="images/aliens/page_6.jpg" alt="" />
-                    <img src="images/aliens/page_8.jpg" alt="" />
-                </div>
-                <div class="desktop-12 tablet-12 columns">
-                    <div class="entry" id="archive">
-                    <blockquote >
-                        <h3>
-                            "I give you this watch, not that you might remember time, but so that you might forget it for a little while. I can only tell you that time is me turning and turning while the world is turning around a star that turns around a center that turns around the whole time. Among all the other things and the little turning animals and all the little turning worlds, there’s me trying to turn to you." (<a href="https://www.thisamericanlife.org/617/fermis-paradox">Matt Salyer, This American Life</a>)
-                        </h3>
-                    </blockquote>
-                </div>  
-                </div>
-
-                <div class="clear"></div>
-                <h1>survey</h1>
-                <p>
-                    <a class="button small" href="https://alien-survey.herokuapp.com/">take the survey here</a>
-                </p>
-                <p>a survey that probes users on their thoughts on aliens as well as their own place here on earth. the survey concludes with a modified drake equation to apply to the people in your own life.</p>
-                <div class="desktop-12 columns border-top">
-                    <img src="images/aliens/survey.gif"/>      
-                </div>
-
-                <div class="clear"></div>
-                    <h1>installation</h1>
-                    <p>the answers to the surveys were then vectorized using word2vec, dimension-reduced with PCA, and then plotted with VictoryChart onto a separate interface that is projected onto a large sphere. as users entered their answers, a corresponding "star" would appear on the surface of the sphere in relation to everyone else's answers.</p>
-                    <div class="clear"></div>
-                    <div class="desktop-12 columns border-top">
-                        <img src="images/aliens/answers.gif"/>
-                        <img src="images/aliens/ball.gif"/>
-                    </div>
-
-
-            </div><!-- // .desktop-12 -->
-
-            <div class="clear"></div>
-
-        </div><!-- // .container -->
-    </section><!-- // section -->
+    </div>
 
 
 
 
-    <!-- Footer
-    ================================================== -->
-    <section id="footer">
-        <div class="container">
-            <div class="desktop-3 columns">
-                <p>Copyright &copy; <a href="http://www.typebig.com" class="italic">Typebig</a></p>
-            </div><!-- // .desktop-3 -->
 
-            <div class="desktop-9 columns">
-                <ul id="social">
-                    <li><a href="https://www.facebook.com/tammy.qiu.9" class="hoverMe">Facebook</a></li>
-                    <li><a href="https://twitter.com/tammyqiu" class="hoverMe">Twitter</a></li>
-                    <li><a href="https://www.instagram.com/qiu.8/" class="hoverMe">Instagram</a></li>
-                </ul><!-- // #social -->
-            </div><!-- // .desktop-9 -->
+    <div class="bottomnav noselect">
+        <a href="https://twitter.com/tammyqiu">Twitter</a>
+        <a href="https://www.instagram.com/qiu.8">Instagram</a>
+        <a href="mailto:21tqiu@gmail.com">E-mail</a>
 
-            <div class="clear"></div>
-        </div><!-- // .container -->
-    </section><!-- // section#footer -->
+        <div class="left">
+            <a href="">feel free to leave a message on the page by drawing on the screen</a>
+        </div>
+    </div>
 
-
-    <!-- JS
-    ================================================== -->
-    <!-- 
-        Flexslider 2.1 has known issues of manualControls setting with jQuery 1.9~
-        Use jQuery 1.8 until Flexslider 2.2 stable version is released
-    -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-    <script src="js/jQuery.BlackAndWhite.min.js"></script>
-    <script src="js/modernizr.js"></script>
-    <script src="js/less-1.4.0.min.js"></script>
-    <script src="js/jquery.typeMenu.js"></script>
-    <script src="js/jquery.typeSticky.js"></script>
-
-
-    
-
-    
-
-
-    
-
-
-    <script src="js/jquery.custom.js"></script>
-
-
-<!-- End Document
-================================================== -->
 </body>
 </html>
