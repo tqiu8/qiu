@@ -34,6 +34,7 @@
         </p>
 
         <img src="images/aliens/survey.gif" />
+        <h2><a class="button small" href="https://alien-survey.herokuapp.com/">Alien Survey</a></h2>
         <p>
             a survey that probes users on their thoughts on aliens as well as their own place here on earth.
             the survey concludes with a modified drake equation to apply to the people in your own life.
@@ -43,9 +44,8 @@
 
         <img src="images/aliens/ball.gif" />
 
-        <p>the answers to the surveys were then vectorized using word2vec, dimension-reduced with PCA, and then plotted with 
-        VictoryChart onto a separate interface that is projected onto a large sphere. as users entered their answers, a corresponding 
-        "star" would appear on the surface of the sphere in relation to everyone else's answers.</p>
+        <p>Their answers were then embedded with a custom word embedding that was trained on a dataset from the Poetry Foundation. Unlike in Computer Vision research, where the objective meaning of words is more valued, I was more interested in assessing the relative poetic context and similarity of words. While not the most “accurate” linguistically, I wanted to capture and quantify the subjective experiences. Afterwards, I compressed the embedding vectors via Principal Component Analysis, then visualized and animated them on a 2-D plot: small, spectral dots hovering over a black background. This plot was then projected onto a large, white sphere representing the cosmos. A new submission would appear instantaneously in the universe of other previous answers. Through this very simple layer of interaction, I intended to measure loneliness and curiosity. The experience of taking the survey was individual and yet the outcome was intended to be collective. 
+</p>
 
     </div>
 
