@@ -1,0 +1,28 @@
+@import "./typography.css";
+
+div {
+    /* color: white; */
+    padding: 0;
+  }
+
+body {
+    margin: 0;
+    background-color: #FAF2D4;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: "Rawon";
+    font-size: 100px;
+    line-height: 80%;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    z-index: -100;
+}
+
+.project-pic {
+    position: fixed;
+}
